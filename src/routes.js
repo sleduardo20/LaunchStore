@@ -1,11 +1,7 @@
 const express = require('express');
+
 const routes = express.Router();
 
+routes.get('/', (request, response) => response.render('layout.njk'));
 
-routes.get('/',(req,res) => {
-    return res.send("ok")
-})
-
-
-
-module.exports = routes
+module.exports = routes;

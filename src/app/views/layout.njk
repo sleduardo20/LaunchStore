@@ -3,31 +3,26 @@
     <head>
         <meta charset="utf-8">
         
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <link rel="stylesheet" href="/styles.css">
         
         {% block head %} 
         
-        <title>Gym Manager</title>
+        <title>LaunchStore</title>
         
         {% endblock %}
 
     </head>
 
     <body>
-    <header>
-
-        <div class="links">
-            <a href="/instructors">Instructors</a>
-            <a href="/members">Members</a>
-          </ul>
-      </div>
-    </header>
+      {%include "parts/header.njk"%}}
 
     
     {% block content %} 
     {% endblock %}
 
-
+    {%include "parts/footer.njk"%}}
     <script src="/scripts.js"></script>
     </body>
 </html>
